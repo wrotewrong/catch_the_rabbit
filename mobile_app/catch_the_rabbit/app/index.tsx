@@ -4,9 +4,21 @@ import { Link } from 'expo-router';
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Link href='/singlePhoto'>Pomiar małego stosu</Link>
-      <Link href='/multiPhoto'>Pomiar dużego stosu</Link>
-      <Link href='/guide'>Instrukcja</Link>
+      <View style={styles.button}>
+        <Link style={styles.link} href='/singlePhoto'>
+          Pomiar małego stosu
+        </Link>
+      </View>
+      <View style={styles.button}>
+        <Link style={styles.link} href='/multiPhoto'>
+          Pomiar dużego stosu
+        </Link>
+      </View>
+      <View style={styles.button}>
+        <Link style={styles.link} href='/guide'>
+          Instrukcja
+        </Link>
+      </View>
     </View>
   );
 }
@@ -14,7 +26,17 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
+  },
+  button: {
+    backgroundColor: 'green',
+    padding: 15,
+    borderRadius: 50,
+    color: 'white',
+  },
+  link: {
+    fontSize: 25,
+    color: 'white',
   },
 });

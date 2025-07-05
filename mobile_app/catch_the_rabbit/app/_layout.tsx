@@ -17,6 +17,8 @@ export default function RootLayout() {
       <Stack.Screen name='singlePhoto' />
       <Stack.Screen name='multiPhoto' />
       <Stack.Screen name='guide' />
+      <Stack.Screen name='productsList' />
+      <Stack.Screen name='speciesList' />
       <Stack.Screen name='+not-found' />
     </Stack>
   );
