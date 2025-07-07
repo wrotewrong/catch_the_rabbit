@@ -1,5 +1,6 @@
-import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { View, Text, Pressable } from 'react-native';
 import { router } from 'expo-router';
+import { styles } from '@/constants/styles';
 
 export default function productList() {
   const options = ['S2A', 'S2B', 'S4'];
@@ -23,15 +24,3 @@ export default function productList() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  list: { padding: 15, borderBottomWidth: 1, borderColor: '#ccc' },
-  listOption: {
-    fontSize: 25,
-  },
-});

@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet, TextInput, Pressable } from 'react-native';
+import { View, Text, TextInput, Pressable } from 'react-native';
 import { Link, useLocalSearchParams } from 'expo-router';
+import { styles } from '@/constants/styles';
 
 export default function SinglePhotoScreen() {
   const [length, setChangeLength] = React.useState('');
@@ -53,27 +54,3 @@ export default function SinglePhotoScreen() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-  },
-  button: {
-    backgroundColor: 'green',
-    padding: 15,
-    borderRadius: 50,
-    color: 'white',
-  },
-  link: {
-    fontSize: 25,
-    color: 'white',
-  },
-  input: {
-    fontSize: 25,
-    borderColor: 'green',
-    borderWidth: 2,
-    borderRadius: 50,
-  },
-});
