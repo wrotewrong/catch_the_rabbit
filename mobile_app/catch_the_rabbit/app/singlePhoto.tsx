@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, Text, TextInput, Pressable } from 'react-native';
 import { Link, useLocalSearchParams } from 'expo-router';
-import { styles } from '@/constants/styles';
+import React from 'react';
+import { Pressable, Text, TextInput, View } from 'react-native';
+import { styles } from '../constants/styles';
 
 export default function SinglePhotoScreen() {
   const [length, setChangeLength] = React.useState('');

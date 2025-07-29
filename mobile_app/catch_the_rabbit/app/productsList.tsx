@@ -1,6 +1,6 @@
-import { View, Text, Pressable } from 'react-native';
 import { router } from 'expo-router';
-import { styles } from '@/constants/styles';
+import { Pressable, Text, View } from 'react-native';
+import { styles } from '../constants/styles';
 
 export default function productList() {
   const options = ['S2A', 'S2B', 'S4'];

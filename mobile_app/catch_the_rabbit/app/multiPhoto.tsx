@@ -1,5 +1,5 @@
-import { View, Text } from 'react-native';
-import { styles } from '@/constants/styles';
+import { Text, View } from 'react-native';
+import { styles } from '../constants/styles';
 
 export default function MultiPhotoScreen() {
   return (
